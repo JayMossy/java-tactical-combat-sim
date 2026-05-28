@@ -8,6 +8,7 @@ A console-based turn-based tactical combat simulator built in Java.
 - Created project skeleton
 - Added Position class
 - Added basic console grid renderer
+- Added Main and tested ConsoleRenderer with Position Class
 
 ## Long Term Goals
 - Practice Java OOP

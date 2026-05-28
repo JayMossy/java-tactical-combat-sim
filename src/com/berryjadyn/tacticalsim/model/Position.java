@@ -2,7 +2,7 @@ package com.berryjadyn.tacticalsim.model;
 
 
 /* 
- * Stores position of an entity at a point
+ * Stores position of an object at a point
  * Position is top-bottom (row) and left-right (column) 
 */
 public class Position {
@@ -11,8 +11,8 @@ public class Position {
 
 
     /**
-     * Returns the current row and column of an entity
-     * If no position is stated, entity starts at top left
+     * Returns the current row and column of an object
+     * If no position is stated, object starts at top left
      * 
      * @param row (top-bottom)
      * @param column (left-right)
