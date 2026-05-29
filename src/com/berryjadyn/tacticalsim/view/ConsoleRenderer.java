@@ -1,5 +1,6 @@
 package com.berryjadyn.tacticalsim.view;
 
+import com.berryjadyn.tacticalsim.model.GridMap;
 import com.berryjadyn.tacticalsim.model.Position;
 
 public class ConsoleRenderer {
@@ -7,13 +8,13 @@ public class ConsoleRenderer {
     /**
      * Renders the grid with the current object position
      * 
-     * @param rows Total grid rows
-     * @param cols Total grid columns
+     * @param gridMap Map containing grid size
      * @param position Current object position
      */
-    public void render(int rows, int cols, Position position) {
-        for (int i = 0; i < rows; i++) {
-            for (int j = 0; j < cols; j++) {
+    public void render(GridMap gridMap, Position position) {
+
+        for (int i = 0; i < gridMap.getRows(); i++) {
+            for (int j = 0; j < gridMap.getCols(); j++) {
                 if (i == position.getRow() && j == position.getColumn()) {
                     System.out.print("P ");
                 } else {
@@ -23,6 +24,11 @@ public class ConsoleRenderer {
             System.out.println();
         }
     }
+}
+
+
+
+    // PAST LEARNING OR EXPERIMENT ATTEMPTS
     
     // public void render(int rows, int cols, Position position) {
     //     for (int i = 0; i < rows; i++) {
@@ -80,4 +86,3 @@ public class ConsoleRenderer {
     //     return false;
 
     // }
-}
